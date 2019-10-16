@@ -1,33 +1,46 @@
-
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/categories/Tutorials/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/tags/Assembly/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/2019/06/20/ass/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/tags/Writeup/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/categories/About/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/categories/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/tags/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/2019/06/19/hello-world/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>http://cyb3rsaurus.tk/archives/</loc>
-  </sitemap>
-</sitemapindex>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>cyb3rsaurus.tk/2019/09/13/kotlinLangIntro/</loc>
+    
+    <lastmod>2019-10-16T16:17:37.955Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/2019/08/20/%5BWriteup%5DNullcon-17%20EasyPeasy/</loc>
+    
+    <lastmod>2019-08-20T12:57:30.618Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/2019/06/20/ass/</loc>
+    
+    <lastmod>2019-07-07T09:30:48.279Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/2019/06/19/hello-world/</loc>
+    
+    <lastmod>2019-06-22T06:22:22.897Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/categories/index.html</loc>
+    
+    <lastmod>2019-06-22T05:07:17.813Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/tags/index.html</loc>
+    
+    <lastmod>2019-06-22T05:05:59.670Z</lastmod>
+    
+  </url>
+  
+</urlset>
