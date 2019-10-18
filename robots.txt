@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Allow: /sitemap.htm
-Sitemap: http://cyb3rsaurus.tk/sitemap.xml

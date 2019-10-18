@@ -2,28 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>cyb3rsaurus.tk/2019/09/13/kotlinLangIntro/</loc>
+    <loc>cyb3rsaurus.tk/kotlinVariables/</loc>
     
-    <lastmod>2019-10-16T16:17:37.955Z</lastmod>
+    <lastmod>2019-10-18T18:02:20.920Z</lastmod>
     
   </url>
   
   <url>
-    <loc>cyb3rsaurus.tk/2019/08/20/%5BWriteup%5DNullcon-17%20EasyPeasy/</loc>
+    <loc>cyb3rsaurus.tk/kotlinLangIntro/</loc>
+    
+    <lastmod>2019-10-18T18:01:53.768Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/ass/</loc>
+    
+    <lastmod>2019-10-17T08:33:26.508Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>cyb3rsaurus.tk/%5BWriteup%5DNullcon-17%20EasyPeasy/</loc>
     
     <lastmod>2019-08-20T12:57:30.618Z</lastmod>
     
   </url>
   
   <url>
-    <loc>cyb3rsaurus.tk/2019/06/20/ass/</loc>
-    
-    <lastmod>2019-07-07T09:30:48.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>cyb3rsaurus.tk/2019/06/19/hello-world/</loc>
+    <loc>cyb3rsaurus.tk/hello-world/</loc>
     
     <lastmod>2019-06-22T06:22:22.897Z</lastmod>
     
