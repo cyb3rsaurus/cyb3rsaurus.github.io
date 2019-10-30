@@ -1,17 +1,123 @@
-<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Kotlin Variables"><meta name="keywords" content="Kotlin"><meta name="author" content="kh4l"><meta name="copyright" content="kh4l"><title>Kotlin Variables | cyb3rsaurus</title><link rel="shortcut icon" href="/logo.png"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
-  google_ad_client: 'ca-pub-...........',
-  enable_page_level_ads: 'true'
-});
-</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
-  }
-} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Intro"><span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Variables"><span class="toc-text">Variables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Place-Holders"><span class="toc-text">Place Holders</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Type-Inferance"><span class="toc-text">Type Inferance</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Constant-Variables"><span class="toc-text">Constant Variables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Notes-For-Java-Programmers"><span class="toc-text">Notes For Java Programmers</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">kh4l</div><div class="author-info__description text-center"></div><div class="follow-button"><a href="https://github.com/kalyanvem">GitHub</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">5</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">4</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">5</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://img.vim-cn.com/cc/b3c73e9001c2c42a03e13fc1a3cd57afe5734c.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">cyb3rsaurus</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">Kotlin Variables</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-10-17</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Kotlin-Tutorials/">Kotlin Tutorials</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>As we have succefully completed printing a "thing" to the console, that is just written but not stored anywhere, in this tutorial, let's see what <strong>Variables</strong> are.<br>
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kotlin Variables - cyb3rsaurus</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="cyb3rsaurus Kotlin Tutorials kh4l khal Educational,"> 
+    <meta name="description" content="IntroAs we have succefully completed printing a &#34;thing&#34; to the console, that is just written but no,"> 
+    <meta name="author" content="kh4l"> 
+    <link rel="alternative" href="atom.xml" title="cyb3rsaurus" type="application/atom+xml"> 
+    <link rel="icon" href="/logo.png"> 
+    <link href="/font/Rubik-Bold-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="/font/Rubik-Regular-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nuy6s3evgdk.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+</html>
+<body class="loading">
+    <div class="la-ball-atom la-2x">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <span id="config-title" style="display:none">cyb3rsaurus</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a id="home-icon" class="image-icon icon-home iconfont animated fadeIn" href="javascript:;" data-url=""></a>
+    <div id="play-icon" title="Play/Pause" class="iconfont icon-play animated fadeIn"></div>
+    <h3 class="subtitle">Kotlin Variables</h3>
+    <div class="social">
+<!--        <div class="like-icon">-->
+<!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+<!--        </div>-->
+        <div>
+            <div class="share animated fadeIn">
+                
+                    <a href="javascript:;" class="iconfont icon-share1"></a>
+                    <div class="share-component-cc" data-disabled="facebook,linkedin,diandian,tencent,google"></div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <div class= article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                    <a href="/categories/Kotlin Tutorials"><b>「 </b>KOTLIN TUTORIALS<b> 」</b></a>
+                
+                October 17, 2019
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/kotlinVariables/" title="Kotlin Variables">Kotlin Variables</a></h3>
+            
+                <p class="post-count animated fadeInDown">
+                    
+                        <span>
+                        <b class="iconfont icon-text2"></b> <i>Words count</i>
+                        9k
+                    </span>
+                    
+                    
+                        <span>
+                        <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                        8 mins.
+                    </span>
+                    
+                    
+                    
+                        <span id="busuanzi_container_page_pv">
+                            <b class="iconfont icon-read"></b> <i>Read count</i>
+                            <span id="busuanzi_value_page_pv">0</span>
+                        </span>
+                    
+                </p>
+            
+            
+                <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Kotlin/">Kotlin</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn slower">
+            <h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>As we have succefully completed printing a "thing" to the console, that is just written but not stored anywhere, in this tutorial, let's see what <strong>Variables</strong> are.<br>
 <strong>Yo! Before going to variables, explain what the "thing" is ?</strong><br>
 The thing we have printed earlier is a <em>String</em>. A string is a sequence of characters. This is one type of data type. there are other data types like <em> Int, Double, Char, Long, Short, Byte, String...</em> Data types are used to categorize the set of data and further perform respective operations on data.
 From the above list of data types, data types that deal with Numbers are,
@@ -28,63 +134,319 @@ From the above list of data types, data types that deal with Numbers are,
 <p><strong>What are variables?</strong></p>
 <h1 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h1><p>Consider Variables as the containers that hold data. They are called Variables as the data can be changable, i.e, the data in the variables can vary. <strong>How can we declare variables in Kotlin</strong>? consider the following code. </p>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    var name: String = &quot;kh4l&quot;</span><br><span class="line">    var gender: Char = &apos;M&apos;</span><br><span class="line">    var age: Int = 19</span><br><span class="line"></span><br><span class="line">    println(name)</span><br><span class="line">    println(gender)</span><br><span class="line">    println(age)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>fun main(){
+    var name: String = &quot;kh4l&quot;
+    var gender: Char = &#39;M&#39;
+    var age: Int = 19
 
-<p>So, as you see that we have used a keyword <em>var</em> to declare a variable, <em>name</em> of type <em>String</em> by using "<strong>:</strong>". this is the syntax we fallow to declare a variable of type String. The generalized syntax to declare a variable of any type is<br><strong> var variable_name: type = value</strong><br> 
+    println(name)
+    println(gender)
+    println(age)
+}
+</code></pre><p>So, as you see that we have used a keyword <em>var</em> to declare a variable, <em>name</em> of type <em>String</em> by using "<strong>:</strong>". this is the syntax we fallow to declare a variable of type String. The generalized syntax to declare a variable of any type is<br><strong> var variable_name: type = value</strong><br> </p>
+<p>
 
 <ul>
-<li>In the second line of the code, name of the variable is <em>name</em> and the type is <em>String</em>. A String musst be wrapped in double quotes(<strong>“ “</strong>).<br> </li>
-<li>whereas on the third line, <em>gender</em> is a variable of type Character, declared using <em>Char</em> type, contains the value <strong>M</strong>. Characters are assigned to the variable, by wrapping them in single quotes(<strong>‘ ‘</strong>).<br> </li>
+<li>In the second line of the code, name of the variable is <em>name</em> and the type is <em>String</em>. A String musst be wrapped in double quotes(<strong>“ “</strong>). </li>
+<li>whereas on the third line, <em>gender</em> is a variable of type Character, declared using <em>Char</em> type, contains the value <strong>M</strong>. Characters are assigned to the variable, by wrapping them in single quotes(<strong>‘ ‘</strong>). </li>
 <li>The variable <em>age</em> of type Integer declared using <em>Int</em> keyword, holds the value 19, assigned without any quotes. </li>
-<li>The data of respective type variables is assigned by using assignment operator (=).<br> Running the code, prints the values as:</li></ul></p><br><img src="/Images/output.png" alt="Output 1"><br>
+<li>The data of respective type variables is assigned by using assignment operator (=).<br> Running the code, prints the values as:</li></ul></p>
 
-<p> As you can see in the above output, It just prints the data that variable holds. Cool, right?<br>
-<strong>Hey! what's the point on printing without doing any operations to the data?</strong>
-Yep, to perform operations on the variables like
-
+<p><img src="/Images/output.png" alt="Output 1"></p>
+<p> As you can see in the above output, It just prints the data that variable holds. Cool, right?<br><br><strong>Hey! what’s the point on printing without doing any operations to the data?</strong><br>Yep, to perform operations on the variables like</p>
 <ul>
 <li>including <em>name</em>(String) or <em>gender</em>(Character) in a meaningful sentance,</li>
-<li>calculating <em>age</em>(Integer). say, after few years</li></ul></p>
-
+<li>calculating <em>age</em>(Integer). say, after few years</li>
+</ul>
 <h1 id="Place-Holders"><a href="#Place-Holders" class="headerlink" title="Place Holders"></a>Place Holders</h1><p>The above operations can be achieved by the help of <strong>Plaseholders</strong>. Consider the code,</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    var name: String = &quot;kh4l&quot;</span><br><span class="line">    var gender: Char = &apos;M&apos;</span><br><span class="line">    var age: Int = 19</span><br><span class="line"></span><br><span class="line">    println(&quot;My name is $name&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>fun main(){
+    var name: String = &quot;kh4l&quot;
+    var gender: Char = &#39;M&#39;
+    var age: Int = 19
 
-<p>In the above code, <em>$name</em> is a placeholder, that refers to the <em>name</em> variable. Whatever the data stored in the <em>name</em> variable is placed in the place of placeholder. Let’s see the output after running the code.<br><img src="/Images/pholdVariables.png" alt="Output 2"><br><br>So, With the help of these placeholders, we can manipulate data, i.e, We have formed a well formated sentance out of the simple String variable. Try using placeholders and construct sentance using gender, age variables on your own. Moving farword, as you can see that string variables can be concatnated using placeholders. Now, performing simple Arithematic operations on the Integer variables like addition, substraction, multiplication or division. this can be achieved as</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    var number: Int = 20</span><br><span class="line"></span><br><span class="line">    println(&quot;Addition = $&#123;number + 10&#125;&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    println(&quot;My name is $name&quot;)
+}</code></pre><p>In the above code, <em>$name</em> is a placeholder, that refers to the <em>name</em> variable. Whatever the data stored in the <em>name</em> variable is placed in the place of placeholder. Let’s see the output after running the code.</p><p></p>
+<p><img src="/Images/pholdVariables.png" alt="Output 2"></p>
+<p>So, With the help of these placeholders, we can manipulate data, i.e, We have formed a well formated sentance out of the simple String variable. Try using placeholders and construct sentance using gender, age variables on your own. Moving farword, as you can see that string variables can be concatnated using placeholders. Now, performing simple Arithematic operations on the Integer variables like addition, substraction, multiplication or division. this can be achieved as</p>
+<pre><code>fun main(){
+    var number: Int = 20
 
-<p><img src="/Images/Int_addition.png" alt="Output 3"><br>We use dollor <strong>$</strong> sign followed by open curly bracket(<strong>{</strong>) and <strong>Arithematic operations on variables</strong> then closed curly bracket(<strong>}</strong>). Try performing substraction, multiplication and division and experiment more on your own.</p>
+    println(&quot;Addition = ${number + 10}&quot;)
+}</code></pre><p></p>
+
+<p><img src="/Images/Int_addition.png" alt="Output 3"></p>
+<p>
+We use dollor <strong>$</strong> sign followed by open curly bracket(<strong>{</strong>) and <strong>Arithematic operations on variables</strong> then closed curly bracket(<strong>}</strong>). Try performing substraction, multiplication and division and experiment more on your own.
+</p>
+
 <h1 id="Type-Inferance"><a href="#Type-Inferance" class="headerlink" title="Type Inferance"></a>Type Inferance</h1><p>As we have discussed in the Advantages Of Kotlin section in the Kotlin Introduction page, Kotlin supports Type Inferance, which means that the variable type is not to be provided, while declaring variables. Compiler sees through the type of the data you assign to the variable and treats the variable as the same. 
 
 </p><p>In All the previous programs we have wrote earlier, the type of the variables is specified. Lets try the first program we wrote without specifying type to variables and run. Consider the below example.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    var name = &quot;kh4l&quot;</span><br><span class="line">    var gender = &apos;M&apos;</span><br><span class="line">    var age = 19</span><br><span class="line"></span><br><span class="line">    println(name)</span><br><span class="line">    println(gender)</span><br><span class="line">    println(age)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>fun main(){
+    var name = &quot;kh4l&quot;
+    var gender = &#39;M&#39;
+    var age = 19
+
+    println(name)
+    println(gender)
+    println(age)
+}
+</code></pre><p></p>
 
 <p><img src="/Images/typeInference.png" alt="Output 4"></p>
 <p>The above program, without specifying variables type, gave the same output as the previous one with type specified variables. Let’s try doing Arithematic operations using the same.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    var number = 20</span><br><span class="line"></span><br><span class="line">    println(&quot;Addition = $&#123;number + 10&#125;&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>fun main(){
+    var number = 20
 
-<p><img src="/Images/typeInference_addition.png" alt="Output 5"></p>
+    println(&quot;Addition = ${number + 10}&quot;)
+}</code></pre><p><img src="/Images/typeInference_addition.png" alt="Output 5"></p>
 <p>Works same as the previous program with type specified variables.</p>
-<h1 id="Constant-Variables"><a href="#Constant-Variables" class="headerlink" title="Constant Variables"></a>Constant Variables</h1><p>In Kotlin, to make a variable constant, whose value cannot be changed, we declare the variable using <em>val</em>(value) keyword instead of <em>var</em> keyword. If a variable is declared using <em>val</em> keyword, and assign data, that data cannot be changed. Let’s take our first example, but with variables declared using <em>val</em> keyword. Before continuing, note that <strong>we must not forget to assign data to variable if declared without data type, while using <em>val</em> keyword.</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    val name: String = &quot;kh4l&quot;</span><br><span class="line">    val gender = &apos;M&apos;</span><br><span class="line">    var age = 19</span><br><span class="line"></span><br><span class="line">    println(name)</span><br><span class="line">    println(gender)</span><br><span class="line">    println(age)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Constant-Variables"><a href="#Constant-Variables" class="headerlink" title="Constant Variables"></a>Constant Variables</h1><p>
 
-<p>In the above program, name and gender are declared using <em>val</em> keyword whereas age is declared using <em>var</em> keyword. If we run it, it gives the output as<br><img src="/Images/val_normal.png" alt="Output 6"><br>pretty normal, right? Let’s try not assigning any data to <em>name</em> while not specifying type of the variable.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    val name</span><br><span class="line">    val gender = &apos;M&apos;</span><br><span class="line">    var age = 19</span><br><span class="line"></span><br><span class="line">    println(gender)</span><br><span class="line">    println(age)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</p><p>In Kotlin, to make a variable constant, whose value cannot be changed, we declare the variable using <em>val</em>(value) keyword instead of <em>var</em> keyword. If a variable is declared using <em>val</em> keyword, and assign data, that data cannot be changed. Let’s take our first example, but with variables declared using <em>val</em> keyword. Before continuing, note that <strong>we must not forget to assign data to variable if declared without data type, while using <em>val</em> keyword.</strong></p>
+<pre><code>fun main(){
+    val name: String = &quot;kh4l&quot;
+    val gender = &#39;M&#39;
+    var age = 19
 
-<p><img src="/Images/val_error_Notassig.png" alt="Output 7"><br>So, variable declared using <em>val</em> keyword should be assigned some data or should be specified data type.<br>Let’s try reassigning name variable and running the code.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    val name: String = &quot;kh4l&quot;</span><br><span class="line">    val gender = &apos;M&apos;</span><br><span class="line">    var age = 19</span><br><span class="line">    name = &quot;cyb3rsaurus&quot;</span><br><span class="line">    println(name)</span><br><span class="line">    println(gender)</span><br><span class="line">    println(age)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    println(name)
+    println(gender)
+    println(age)
+}
+</code></pre><p>In the above program, name and gender are declared using <em>val</em> keyword whereas age is declared using <em>var</em> keyword. If we run it, it gives the output as<br><img src="/Images/val_normal.png" alt="Output 6"></p>
+<p>pretty normal, right? Let’s try not assigning any data to <em>name</em> while not specifying type of the variable.</p>
+<pre><code>fun main(){
+    val name
+    val gender = &#39;M&#39;
+    var age = 19
 
-<p><img src="/Images/val_error.png" alt="Output 8"><br>As you can see the compilar threw an error saying “val cannot be reassigned”. So, the value given to it is unchangable.</p>
-<p>What if we assign data to constant variable that has no data assigned initially but data type is specified after declaring?</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fun main()&#123;</span><br><span class="line">    val name: String</span><br><span class="line">    val gender = &apos;M&apos;</span><br><span class="line">    var age = 19</span><br><span class="line">    name = &quot;cyb3rsaurus&quot;</span><br><span class="line">    println(name)</span><br><span class="line">    println(gender)</span><br><span class="line">    println(age)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    println(gender)
+    println(age)
+}
+</code></pre><p></p>
 
-<p><img src="/Images/valDeclare.png" alt="Output 9"><br>This works good. We can assign after declaring constant variable with particular data type specified, but cannot reassign already assiged constant variable.</p>
-<h1 id="Notes-For-Java-Programmers"><a href="#Notes-For-Java-Programmers" class="headerlink" title="Notes For Java Programmers"></a>Notes For Java Programmers</h1><p>Few points to be noted by Java Programmers. if not, just ignore:</p>
+<p><img src="/Images/val_error_Notassig.png" alt="Output 7"></p>
+<p>
+So, variable declared using <em>val</em> keyword should be assigned some data or should be specified data type.
+Let's try reassigning name variable and running the code.
+
+<pre><code>fun main(){
+    val name: String = &quot;kh4l&quot;
+    val gender = &#39;M&#39;
+    var age = 19
+    name = &quot;cyb3rsaurus&quot;
+    println(name)
+    println(gender)
+    println(age)
+}
+</code></pre></p>
+
+<p><img src="/Images/val_error.png" alt="Output 8"></p>
+<p>
+As you can see the compilar threw an error saying "val cannot be reassigned". So, the value given to it is unchangable.
+
+</p><p>What if we assign data to constant variable that has no data assigned initially but data type is specified after declaring?</p>
+<pre><code>fun main(){
+    val name: String
+    val gender = &#39;M&#39;
+    var age = 19
+    name = &quot;cyb3rsaurus&quot;
+    println(name)
+    println(gender)
+    println(age)
+} 
+</code></pre><p></p>
+
+<p><img src="/Images/valDeclare.png" alt="Output 9"></p>
+<p>
+This works good. We can assign after declaring constant variable with particular data type specified, but cannot reassign already assiged constant variable.
+</p>
+# Notes For Java Programmers
+
+<p>Few points to be noted by Java Programmers. if not, just ignore:</p>
 <ul>
 <li>Type Inference is similar to Java Generics, provides type safety.</li>
 <li><em>val</em> keyword is similar to the <em>final</em> keyword</li>
 </ul>
-</div></article><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Kotlin/">Kotlin</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/kotlinLangIntro/"><span>Kotlin Language Intro</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://img.vim-cn.com/cc/b3c73e9001c2c42a03e13fc1a3cd57afe5734c.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2019 By kh4l</div><div class="footer_custom_text">Plant a Tree For every successful compilation.</div><div class="icp"><a><span>Peace!</span></a></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
-  $('#nav').addClass('is-mobile')
-  $('footer').addClass('is-mobile')
-  $('#top-container').addClass('is-mobile')
-}</script></body></html>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="/logo.png" height=300 width=300></img>
+                    <p>kh4l</p>
+                    <span>Plant a Tree for every successful compilation</span>
+                    <dl>
+                        <dd><a href="https://github.com/KalyanVem" target="_blank"><span class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://twitter.com/kalyan_vem" target="_blank"><span class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="" target="_blank"><span class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">5 <p>Articles</p></a></li>
+                    <li><a href="/categories">4 <p>Categories</p></a></li>
+                    <li><a href="/tags">3 <p>Tags</p></a></li>
+                </ul>
+            </div>
+            
+                
+                
+                    <div class="box sticky animated fadeInRight faster">
+                        <div id="toc" class="subbox">
+                            <h4>Contents</h4>
+                            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Intro"><span class="toc-number">1.</span> <span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Variables"><span class="toc-number">2.</span> <span class="toc-text">Variables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Place-Holders"><span class="toc-number">3.</span> <span class="toc-text">Place Holders</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Type-Inferance"><span class="toc-number">4.</span> <span class="toc-text">Type Inferance</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Constant-Variables"><span class="toc-number">5.</span> <span class="toc-text">Constant Variables</span></a></li></ol>
+                        </div>
+                    </div>
+                
+            
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2019
+        <span class="gradient-text">
+            kh4l
+        </span>.
+        <br>
+        <span class="gradient-text">
+            Peace
+        </span>
+        
+    </p>
+</footer>
+
+<script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="/css/dracula.css">
+    <script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js">
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["Plant a Tree for every successful compilation", "It&#39;s Hard to Read Code Than to Write it"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+</html>
