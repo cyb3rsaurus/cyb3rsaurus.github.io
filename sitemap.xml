@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/kotlinVariables/</loc>
-    
-    <lastmod>2019-10-30T09:54:27.681Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/%5BWriteup%5DNullcon-17%20EasyPeasy/</loc>
     
-    <lastmod>2019-10-23T05:33:11.037Z</lastmod>
+    <lastmod>2019-10-30T17:52:25.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/ass/</loc>
+    <loc>/kotlinVariables/</loc>
     
-    <lastmod>2019-10-23T05:32:04.493Z</lastmod>
+    <lastmod>2019-10-30T17:51:18.040Z</lastmod>
     
   </url>
   
   <url>
     <loc>/kotlinLangIntro/</loc>
     
-    <lastmod>2019-10-23T05:31:18.782Z</lastmod>
+    <lastmod>2019-10-30T17:51:06.233Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/ass/</loc>
+    
+    <lastmod>2019-10-30T17:50:46.259Z</lastmod>
     
   </url>
   
