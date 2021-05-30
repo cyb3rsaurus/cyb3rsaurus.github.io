@@ -85,8 +85,6 @@ var searchFunc = function(path, searchId, contentId) {
           var dataContent = stripHtml(data.content.trim());
           var dataContentLowerCase = dataContent.toLowerCase();
           var dataUrl = data.url;
-          dataUrl = dataUrl.replace('/search','');
-          console.log(dataUrl);
           var indexTitle = -1;
           var indexContent = -1;
           var firstOccur = -1;
@@ -111,7 +109,7 @@ var searchFunc = function(path, searchId, contentId) {
           if (matches > 0) {
             var searchResult = {};
             searchResult.rank = matches;
-            searchResult.str = "<li><a href='"+ dataUrl.replace('/search','') +"' class='search-result-title'>"+ dataTitle +"</a>";
+            searchResult.str = "<li><a href='"+ dataUrl +"' class='search-result-title'>"+ dataTitle +"</a>";
             if (firstOccur >= 0) {
               // cut out 100 characters
               var start = firstOccur - 20;
