@@ -85,6 +85,7 @@ var searchFunc = function(path, searchId, contentId) {
           var dataContent = stripHtml(data.content.trim());
           var dataContentLowerCase = dataContent.toLowerCase();
           var dataUrl = data.url;
+          dataUrl = dataUrl.replace('/search','');
           var indexTitle = -1;
           var indexContent = -1;
           var firstOccur = -1;
