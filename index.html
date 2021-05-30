@@ -49,16 +49,26 @@
   <script data-ad-client="ca-pub-5667605581579960" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 <style>
-  #eth_logo, #baloon {
+  #eth_logo {
     animation: bounce 1s infinite ease-in alternate;
   }
-
+	#baloon{
+		animation: bounceX 1s infinite ease-in alternate;
+	}
   @keyframes bounce {
     0% {
       transform: translateY(0);
     }
     100% {
       transform: translateY(-5px);
+    }
+  }
+	@keyframes bounceX {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-5px);
     }
   }
 #svg-cont {
